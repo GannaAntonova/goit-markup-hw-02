@@ -9,9 +9,7 @@
 }
 
 body {
-  font-family: "Roboto", "Raleway", sans-serif;
-}
-body {
+  font-family: 'Roboto', 'Raleway', sans-serif;
   color: var(--primary-text-color);
 }
 
@@ -21,7 +19,7 @@ body {
 
 .logo-part-one {
   color: var(--accent-color);
-  font: "Raleway";
+  font: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
@@ -29,7 +27,7 @@ body {
 }
 .logo-part-two {
   color: var(--primary-text-color);
-  font: "Raleway";
+  font: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
@@ -37,13 +35,24 @@ body {
 }
 .logo-part-three {
   color: var(--footer-text-color);
-  font: "Raleway";
+  font: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
   text-decoration: none;
 }
 
+.list {
+  list-style: none;
+}
+
+.site-nav .link.current {
+  color: #2196f3;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  text-decoration: none;
+}
 .site-nav .link {
   color: #212121;
   font-weight: 500;
@@ -57,21 +66,17 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
-}
-.site-nav .link.current {
-  color: #2196f3;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.17;
   text-decoration: none;
 }
 
 .contact-info .link {
   color: hsl(0, 0%, 13%);
+  text-decoration: none;
 }
 .contact-info .link:hover,
 .contact-info .link:focus {
   color: #2196f3;
+  text-decoration: none;
 }
 
 .hero {
@@ -83,30 +88,43 @@ body {
   text-align: center;
 }
 
-.button.primary {
+.button-primary {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
 }
-.button {
+.button-primary {
+  background-color: var(#f5f4fa);
+}
+.button-primary {
+  cursor: pointer;
+}
+.button-primary:hover,
+.button-primary:focus {
+  background-color: var(--accent-color);
+  color: var(--footer-text-color);
+}
+
+.button-nav .button {
   color: var(--primary-text-color);
   background-color: var(#f5f4fa);
 }
-.button {
+.button-nav .button {
   border: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  text-decoration: none;
 }
-.button {
+.button-nav .button {
   cursor: pointer;
 }
-.button:hover,
-.button:focus {
+.button-nav .button:hover,
+.button-nav .button:focus {
   background-color: var(--accent-color);
-  color: var (--footer-text-color);
+  color: var(--footer-text-color);
 }
 
 .title-three {
@@ -147,8 +165,10 @@ body {
 }
 .footer-link {
   color: var(--footer-text-color);
+  text-decoration: none;
 }
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
+  text-decoration: none;
 }
