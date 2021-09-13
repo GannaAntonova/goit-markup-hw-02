@@ -6,10 +6,11 @@
   --footer-section-color: #2f303a;
   --section-text-color-one: #e5e5e5;
   --section-text-color-two: #f5f4fa;
+  --address-link-color: #757575;
 }
 
 body {
-  font-family: 'Roboto', 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--primary-text-color);
   text-decoration: none;
 }
@@ -21,7 +22,7 @@ body {
 
 .logo-part-one {
   color: var(--accent-color);
-  font: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
@@ -29,7 +30,7 @@ body {
 }
 .logo-part-two {
   color: var(--primary-text-color);
-  font: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
@@ -37,7 +38,7 @@ body {
 }
 .logo-part-three {
   color: var(--footer-text-color);
-  font: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
@@ -50,7 +51,6 @@ body {
 }
 
 .site-nav .link {
-  font: 'Roboto';
   color: #212121;
   font-weight: 500;
   font-size: 14px;
@@ -59,7 +59,6 @@ body {
 }
 
 .site-nav .current {
-  font: 'Roboto';
   color: #2196f3;
   font-weight: 500;
   font-size: 14px;
@@ -69,7 +68,6 @@ body {
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  font: 'Roboto';
   color: #2196f3;
   font-weight: 500;
   font-size: 14px;
@@ -78,8 +76,7 @@ body {
 }
 
 .contact-info .link {
-  font: 'Roboto';
-  color: hsl(0, 0%, 13%);
+  color: var(--address-link-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
@@ -87,7 +84,6 @@ body {
 }
 .contact-info .link:hover,
 .contact-info .link:focus {
-  font: 'Roboto';
   color: #2196f3;
   font-weight: 500;
   font-size: 14px;
@@ -95,8 +91,7 @@ body {
   text-decoration: none;
 }
 
-.hero {
-  background-color: var(--footer-section-color);
+.hero-title {
   font: 'Roboto';
   color: var(--footer-text-color);
   font-weight: 900;
@@ -105,28 +100,29 @@ body {
   text-align: center;
 }
 
+.hero {
+  background-color: var(--footer-section-color);
+  text-align: center;
+}
+
 .button-primary {
-  font: 'Roboto';
+  background-color: var(--accent-color);
+  color: var(--footer-text-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
-}
-.button-primary {
-  background-color: var(#f5f4fa);
-}
-.button-primary {
   cursor: pointer;
 }
+
 .button-primary:hover,
 .button-primary:focus {
-  background-color: var(--accent-color);
-  color: var(--footer-text-color);
+  background-color: #188ce8;
 }
 
 .button-nav .button {
   color: var(--primary-text-color);
-  background-color: var(#f5f4fa);
+  background-color: var(--section-text-color-two);
 }
 .button-nav .button {
   border: 0;
@@ -141,7 +137,6 @@ body {
 .button-nav .current {
   background-color: var(--accent-color);
   color: var(--footer-text-color);
-  font: 'Roboto';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -156,26 +151,23 @@ body {
 }
 
 .title-three {
-  font: 'Roboto';
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
 }
 .title-three-p {
-  font: 'Roboto';
+  color: var(--address-link-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
 .title-two {
-  font: 'Roboto';
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
 .title-one {
-  font: 'Roboto';
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -186,14 +178,13 @@ body {
   background-color: var(--section-text-color-two);
 }
 .name {
-  font: 'Roboto';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.17;
   text-align: center;
 }
 .profession {
-  font: 'Roboto';
+  color: var(--address-link-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.17;
@@ -206,13 +197,13 @@ body {
   line-height: 2;
 }
 .project-example-p {
+  color: var(--address-link-color)
   font-size: 16px;
   line-height: 1.87;
 }
 
 .footer {
   background-color: var(--footer-section-color);
-  font: 'Roboto';
   font-size: 400;
   font-weight: 14px;
   line-height: 1.71;
@@ -228,8 +219,7 @@ body {
 }
 
 .footer .footer-link {
-  color: var(--footer-text-color);
-  font: 'Roboto';
+  color: rgba(255, 255, 255, 0.6);
   font-size: 400;
   font-weight: 14px;
   line-height: 1.71;
@@ -239,7 +229,6 @@ body {
 .footer .footer-link:hover,
 .footer .footer-link:focus {
   color: var(--accent-color);
-  font: 'Roboto';
   font-size: 400;
   font-weight: 14px;
   line-height: 1.71;
