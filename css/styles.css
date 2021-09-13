@@ -91,6 +91,12 @@ body {
   text-decoration: none;
 }
 
+.project-link {
+  color: var(--primary-text-color);
+  cursor: none;
+  text-decoration: none;
+}
+
 .hero-title {
   font: 'Roboto';
   color: var(--footer-text-color);
@@ -197,7 +203,8 @@ body {
   line-height: 2;
 }
 .project-example-p {
-  color: var(--address-link-color)
+  color: var(--address-link-color);
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
 }
