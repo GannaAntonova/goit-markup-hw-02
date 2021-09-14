@@ -69,10 +69,6 @@ body {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: #2196f3;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.17;
-  text-decoration: none;
 }
 
 .contact-info .link {
@@ -85,10 +81,6 @@ body {
 .contact-info .link:hover,
 .contact-info .link:focus {
   color: #2196f3;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.17;
-  text-decoration: none;
 }
 
 .project-link {
@@ -211,34 +203,22 @@ body {
 
 .footer {
   background-color: var(--footer-section-color);
-  font-size: 400;
-  font-weight: 14px;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
   font-style: normal;
 }
 
 .footer .footer-address-info {
   color: var(--footer-text-color);
-  font-size: 400;
-  font-weight: 14px;
-  line-height: 1.71;
   font-style: normal;
 }
 
 .footer .footer-link {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 400;
-  font-weight: 14px;
-  line-height: 1.71;
-  font-style: normal;
   text-decoration: none;
 }
 .footer .footer-link:hover,
 .footer .footer-link:focus {
   color: var(--accent-color);
-  font-size: 400;
-  font-weight: 14px;
-  line-height: 1.71;
-  font-style: normal;
-  text-decoration: none;
 }
